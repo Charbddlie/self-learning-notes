@@ -1,0 +1,15 @@
+/*/
+/**/*.pdf
+#c++
+!/c++/
+/c++/*
+#included dirs
+!/c++/*.md
+!/c++/c++11/
+!/c++/mdpic/
+
+#linux
+!/linux/
+
+
+
