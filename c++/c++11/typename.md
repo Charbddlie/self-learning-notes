@@ -2,7 +2,9 @@
 
 https://feihu.me/blog/2014/the-origin-and-usage-of-typename/
 
-traits 技术非常重要 std很常用 //todo
+traits 技术非常重要 std很常用
+
+> 可参考 [C++ 的traits 技术到底是什么？ - 知乎专栏](https://zhuanlan.zhihu.com/p/413864991)
 
 c++ primer里面说
 
@@ -25,7 +27,7 @@ void foo() {
 
 ## 规则
 
-- typename在下面情况下禁止使用：    
+- typename在下面情况下禁止使用：
   - 模板定义之外，即typename只能用于模板的定义中
   - 非限定类型，比如前面介绍过的`int`，`vector<int>`之类
   - 基类列表中，比如`template <class T> class C1 : T::InnerType`不能在`T::InnerType`前面加typename
