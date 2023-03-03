@@ -60,6 +60,10 @@ Git的设置文件为`.gitconfig`，它可以在用户主目录下（全局配�
 > 
 > # 改名文件，并且将这个改名放入暂存区
 > $ git mv [file-original] [file-renamed]
+> 
+> # 重新加载gitignore
+> $ git rm -r --cached .
+> $ git add .
 > ```
 
 ## 四、代码提交
@@ -300,3 +304,4 @@ Git的设置文件为`.gitconfig`，它可以在用户主目录下（全局配�
 > ```
 
 <iframe style="position: absolute; top: 0px; left: 0px; border: med
+
