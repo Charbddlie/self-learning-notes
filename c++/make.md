@@ -138,7 +138,7 @@ gcc -Wall -g main.o add.o sub.o -o main
 
 ```makefile
 OBJECTS = main.o add .o sub.o 【OBJECTS是自定义的变量名】
-main:$(OBJECTS)                        【可以在需要的地方使用变量名进行替换，替换规则为$(变量名)】
+main:$(OBJECTS)      【可以在需要的地方使用变量名进行替换，替换规则为$(变量名)】
         gcc -Wall -g $^ -o $@
 main.o:main.c
         gcc -Wall -g -c $< -o $@
@@ -216,7 +216,7 @@ clean :
 
 利用 .o.c :，可以自动地把所有的.c文件到.o文件的生成都使用同一条命令来完成，简化的重复的工作。
 
-## 7. make常用的内嵌函数
+## 7. make常用的内嵌函数	
 
 首先看make中函数调用的形式：
 
@@ -269,8 +269,6 @@ $(BIN):$(ROOTOBJ) $(SUBOBJ)         【main的生成依赖与当前目录及所�
 clean:
         rm -f $(BIN) $(ROOTOBJ) $(SUBOBJ)
 ```
-
-# cmake
 
 
 

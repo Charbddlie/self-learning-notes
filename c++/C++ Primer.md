@@ -474,6 +474,9 @@ c++11 范围for（range for）ohhhhhhhhhhhhhhhhhh
 string str("some string");
 for (auto c : str)
     cout << c << endl;
+for(auto [k,v] : map)
+    cout<< k << v <<endl;
+for(auto [k,_]:map)
 ```
 
 最好控制除了最内层的循环之外，其余循环都是引用
@@ -2795,7 +2798,7 @@ begin和end操作
 
 ##### 关联容器和算法
 
-一遍不对关联容器使用泛型算法
+一般不对关联容器使用泛型算法
 
 支持的算法不能修改或重排容器，只能只读
 
